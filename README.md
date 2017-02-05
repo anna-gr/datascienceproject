@@ -28,7 +28,9 @@ Prior to running the script the dplyr package should be installed:
 ```
 install.packages("dplyr")
 ```
+The result is data_average.txt file.
+
 ## CodeBook.md
-The file contains the description of the varibles in the **data_average** data set.
+The file contains the description of the data set varibles in the data_average.txt file.
 
 
