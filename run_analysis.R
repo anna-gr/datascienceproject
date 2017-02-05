@@ -58,3 +58,4 @@ data_selected <- select(data_all, one_of(col_list))
 ## for each activity and each subject
 data_grouped <- group_by(data_selected, activity_name, subject)
 data_average <- summarise_all(data_grouped, mean)
+write.table(data_average, "data_average.txt", row.name = FALSE)
