@@ -2,16 +2,16 @@ library(dplyr)
 
 ## Reading given data sets and coercing to data.table
 
-features <- read.table("features.txt", stringsAsFactors = FALSE)
-activity <- read.table("activity_labels.txt")
+features <- read.table("UCI_HAR_Dataset/features.txt", stringsAsFactors = FALSE)
+activity <- read.table("UCI_HAR_Dataset/activity_labels.txt")
 
-subj_train <- read.table("train/subject_train.txt")
-x_train <- read.table("train/X_train.txt")
-y_train <- read.table("train/y_train.txt")
+subj_train <- read.table("UCI_HAR_Dataset/train/subject_train.txt")
+x_train <- read.table("UCI_HAR_Dataset/train/X_train.txt")
+y_train <- read.table("UCI_HAR_Dataset/train/y_train.txt")
 
-subj_test <- read.table("test/subject_test.txt")
-x_test <- read.table("test/X_test.txt")
-y_test <- read.table("test/y_test.txt")
+subj_test <- read.table("UCI_HAR_Dataset/test/subject_test.txt")
+x_test <- read.table("UCI_HAR_Dataset/test/X_test.txt")
+y_test <- read.table("UCI_HAR_Dataset/test/y_test.txt")
 
 ## Changing duplicated feature names
 
